@@ -64,6 +64,7 @@ export class Calculator {
         let yearsLeftForBdayinMercury = (yearInFuture - this.earth.earthAge) / .24;
         let yearsLeftForBdayinVenus = (yearInFuture - this.earth.earthAge) / .62;
         let yearsLeftForBdayinMars = (yearInFuture - this.earth.earthAge) / 1.88;
+        let yearsLeftForBdayinJupiter = (yearInFuture - this.earth.earthAge) / 11.86;
 
         this.earth.futureBirthday = {
             message: `You have ${yearsLeftForBdayinEarth} years left to turn in ${yearInFuture} in planet Earth!`
@@ -86,6 +87,13 @@ export class Calculator {
         this.mars = {
             futureBirthday: {
                 message: `You have ${Math.floor(yearsLeftForBdayinMars * 100) / 100} years left to turn in ${Math.round((yearInFuture / this.solarYearDifferences.mars))} in planet Mars!`
+
+            }
+        };
+
+        this.jupiter = {
+            futureBirthday: {
+                message: `You have ${Math.floor(yearsLeftForBdayinJupiter * 100) / 100} years left to turn in ${Math.round((yearInFuture / this.solarYearDifferences.jupiter))} in planet Jupiter!`
 
             }
         };
