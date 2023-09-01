@@ -16,6 +16,6 @@ describe('calcForPlanet', () => {
         () => {
             const calculator = new Calculator(32);
             calculator.calcForPlanet();
-            expect(calculator.mercury.mercuryAge).toEqual(133);
+            expect(calculator.mercury).toEqual({ ageInMercury: 133 });
         });
 });

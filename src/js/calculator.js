@@ -7,9 +7,8 @@ export class Calculator {
 
     calcForPlanet() {
         const mercuryYearInEarth = .24;
-
         let inMercuryYear = Math.round((this.earth.earthAge / mercuryYearInEarth));
-        this.mercury = { mercuryAge: inMercuryYear };
+        this.mercury = { ageInMercury: inMercuryYear };
     }
 }
 
