@@ -60,10 +60,19 @@ export class Calculator {
     }
 
     futureBirthday(yearInFuture) {
-        let yearsLeftForBday = yearInFuture - this.earth.earthAge;
+        let yearsLeftForBdayinEarth = yearInFuture - this.earth.earthAge;
+        let yearsLeftForBdayinMercury = (yearInFuture - this.earth.earthAge) / .24;
 
         this.earth.futureBirthday = {
-            message: `You have ${yearsLeftForBday} years left to turn in ${yearInFuture} in planet Earth!`
+            message: `You have ${yearsLeftForBdayinEarth} years left to turn in ${yearInFuture} in planet Earth!`
+        };
+
+        this.mercury = {
+            futureBirthday: {
+                message: `You have ${Math.floor(yearsLeftForBdayinMercury * 100) / 100} years left to turn in ${Math.round((yearInFuture / this.solarYearDifferences.mercury))} in planet Mercury!`
+
+            }
+
         };
     }
 }
