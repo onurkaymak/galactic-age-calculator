@@ -29,6 +29,12 @@ export class Calculator {
         this.earth.yearPassedSince = {
             message: `It has been ${pastYearInEarth} years passed, since your birthday of ${pastYear} in planet Earth!`
         };
+
+        this.mercury = {
+            yearPassedSince: {
+                message: `It has been ${(pastYearInEarth / this.solarYearDifferences.mercury).toFixed(2)} years passed, since your birthday of ${Math.round((pastYear / this.solarYearDifferences.mercury))} in planet Mercury!`
+            }
+        };
     }
 }
 
