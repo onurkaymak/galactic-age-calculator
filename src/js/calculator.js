@@ -27,6 +27,7 @@ export class Calculator {
         let pastYearInEarth = this.earth.earthAge - pastYear;
         let pastYearInMercury = (this.earth.earthAge - pastYear) / .24;
         let pastYearInVenus = (this.earth.earthAge - pastYear) / .62;
+        let pastYearInMars = (this.earth.earthAge - pastYear) / 1.88;
 
         this.earth.yearPassedSince = {
             message: `It has been ${pastYearInEarth} years passed, since your birthday of ${pastYear} in planet Earth!`
@@ -41,6 +42,12 @@ export class Calculator {
         this.venus = {
             yearPassedSince: {
                 message: `It has been ${Math.floor(pastYearInVenus * 100) / 100} years passed, since your birthday of ${Math.round((pastYear / this.solarYearDifferences.venus))} in planet Venus!`
+            }
+        };
+
+        this.mars = {
+            yearPassedSince: {
+                message: `It has been ${Math.floor(pastYearInMars * 100) / 100} years passed, since your birthday of ${Math.round((pastYear / this.solarYearDifferences.mars))} in planet Mars!`
             }
         };
     }

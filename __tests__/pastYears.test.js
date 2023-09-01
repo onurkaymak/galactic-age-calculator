@@ -29,6 +29,6 @@ describe('pastYears', () => {
         () => {
             const calculator = new Calculator(56);
             calculator.pastYears(43);
-            expect(calculator.mars).toEqual({ yearPassedSince: { message: "It has been 6.91 years passed, since your birthday of 22 in planet Mars!" } });
+            expect(calculator.mars).toEqual({ yearPassedSince: { message: "It has been 6.91 years passed, since your birthday of 23 in planet Mars!" } });
         });
 });
