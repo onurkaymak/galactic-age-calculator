@@ -24,4 +24,11 @@ describe('futureBirthday', () => {
             calculator.futureBirthday(61);
             expect(calculator.venus).toEqual({ futureBirthday: { message: "You have 8.06 years left to turn in 98 in planet Venus!" } });
         });
+
+    test('Test #4 - Should return how many years left for a future birthday based on planet Mars.',
+        () => {
+            const calculator = new Calculator(56);
+            calculator.futureBirthday(61);
+            expect(calculator.mars).toEqual({ futureBirthday: { message: "You have 2.65 years left to turn in 5 in planet Mars!" } });
+        });
 });
