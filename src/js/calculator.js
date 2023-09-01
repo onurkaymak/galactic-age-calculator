@@ -22,5 +22,9 @@ export class Calculator {
         this.mars = { ageInMars: inMarsYear };
         this.jupiter = { ageInJupiter: inJupiterYear };
     }
+
+    pastYears(pastYear) {
+
+    }
 }
 
