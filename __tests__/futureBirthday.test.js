@@ -29,6 +29,6 @@ describe('futureBirthday', () => {
         () => {
             const calculator = new Calculator(56);
             calculator.futureBirthday(61);
-            expect(calculator.mars).toEqual({ futureBirthday: { message: "You have 2.65 years left to turn in 5 in planet Mars!" } });
+            expect(calculator.mars).toEqual({ futureBirthday: { message: "You have 2.65 years left to turn in 32 in planet Mars!" } });
         });
 });
