@@ -73,28 +73,24 @@ export class Calculator {
         this.mercury = {
             futureBirthday: {
                 message: `You have ${Math.floor(yearsLeftForBdayinMercury * 100) / 100} years left to turn in ${Math.round((yearInFuture / this.solarYearDifferences.mercury))} in planet Mercury!`
-
             }
         };
 
         this.venus = {
             futureBirthday: {
                 message: `You have ${Math.floor(yearsLeftForBdayinVenus * 100) / 100} years left to turn in ${Math.round((yearInFuture / this.solarYearDifferences.venus))} in planet Venus!`
-
             }
         };
 
         this.mars = {
             futureBirthday: {
                 message: `You have ${Math.floor(yearsLeftForBdayinMars * 100) / 100} years left to turn in ${Math.round((yearInFuture / this.solarYearDifferences.mars))} in planet Mars!`
-
             }
         };
 
         this.jupiter = {
             futureBirthday: {
                 message: `You have ${Math.floor(yearsLeftForBdayinJupiter * 100) / 100} years left to turn in ${Math.round((yearInFuture / this.solarYearDifferences.jupiter))} in planet Jupiter!`
-
             }
         };
     }
