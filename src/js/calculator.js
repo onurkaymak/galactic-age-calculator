@@ -3,18 +3,19 @@ export class Calculator {
         this.earth = {
             earthAge: age
         };
+        this.solarYearDifferences = {
+            mercury: .24,
+            venus: .62,
+            mars: 1.88,
+            jupiter: 11.86
+        };
     }
 
     calcForPlanet() {
-        const mercuryYearInEarth = .24;
-        const venusYearInEarth = .62;
-        const marsYearInEarth = 1.88;
-        const jupiterYearInEarth = 11.86;
-
-        let inMercuryYear = Math.round((this.earth.earthAge / mercuryYearInEarth));
-        let inVenusYear = Math.round((this.earth.earthAge / venusYearInEarth));
-        let inMarsYear = Math.round((this.earth.earthAge / marsYearInEarth));
-        let inJupiterYear = Math.round((this.earth.earthAge / jupiterYearInEarth));
+        let inMercuryYear = Math.round((this.earth.earthAge / this.solarYearDifferences.mercury));
+        let inVenusYear = Math.round((this.earth.earthAge / this.solarYearDifferences.venus));
+        let inMarsYear = Math.round((this.earth.earthAge / this.solarYearDifferences.mars));
+        let inJupiterYear = Math.round((this.earth.earthAge / this.solarYearDifferences.jupiter));
 
         this.mercury = { ageInMercury: inMercuryYear };
         this.venus = { ageInVenus: inVenusYear };
