@@ -1,8 +1,9 @@
-// import { Calculator } from './../src/js/calculator.js';
+import { Calculator } from './../src/js/calculator.js';
 
-// // describe('Function GOES HERE', () => {
+describe('Calculator', () => {
 
-// //   test('EXPLAIN YOUR TEST HERE', () => {
-// //     // expect().toEqual(result);
-// //   });
-// // });
+    test('Test #1 - Should create a calculator object with age property based on Calculator class.', () => {
+        const calculator = new Calculator(20);
+        expect(calculator.age).toEqual(20);
+    });
+});
