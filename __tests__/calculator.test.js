@@ -25,4 +25,11 @@ describe('calcForPlanet', () => {
             calculator.calcForPlanet();
             expect(calculator.venus).toEqual({ ageInVenus: 52 });
         });
+
+    test('Test #3 - Should return a calculated age in a created mars object based on planet Mars solar year.',
+        () => {
+            const calculator = new Calculator(32);
+            calculator.calcForPlanet();
+            expect(calculator.mars).toEqual({ ageInMars: 17 });
+        });
 });
