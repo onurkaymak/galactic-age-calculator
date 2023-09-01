@@ -60,7 +60,11 @@ export class Calculator {
     }
 
     futureBirthday(yearInFuture) {
+        let yearsLeftForBday = yearInFuture - this.earth.earthAge;
 
+        this.earth.futureBirthday = {
+            message: `You have ${yearsLeftForBday} years left to turn in ${yearInFuture} in planet Earth!`
+        };
     }
 }
 
