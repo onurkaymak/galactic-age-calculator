@@ -13,7 +13,7 @@ describe('pastYears', () => {
         () => {
             const calculator = new Calculator(56);
             calculator.pastYears(43);
-            expect(calculator.mercury).toEqual({ yearPassedSince: { message: "It has been 54.17 years passed, since your birthday of 179 in planet Mercury!" } });
+            expect(calculator.mercury).toEqual({ yearPassedSince: { message: "It has been 54.16 years passed, since your birthday of 179 in planet Mercury!" } });
         });
 
 
@@ -21,6 +21,6 @@ describe('pastYears', () => {
         () => {
             const calculator = new Calculator(56);
             calculator.pastYears(43);
-            expect(calculator.venus).toEqual({ yearPassedSince: { message: "It has been 20.96 years passed, since your birthday of 69 in planet Mercury!" } });
+            expect(calculator.venus).toEqual({ yearPassedSince: { message: "It has been 20.96 years passed, since your birthday of 69 in planet Venus!" } });
         });
 });
