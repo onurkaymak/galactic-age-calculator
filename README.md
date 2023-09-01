@@ -1,6 +1,6 @@
-# (Application Name)
+# Super Galactic Age Calculator
 
-#### (Brief Description of Application)
+#### An age calculator based on different planets in the solar system.
 
 #### By _**Onur Kaymak**_
 
@@ -20,21 +20,16 @@
 
 ## Description
 
+An independent project assignment for Epicodus, project is about Test-Driven Development and Environments with JavaScript.
+[More information about Epicodus](https://www.epicodus.com)
+
 ## Setup/Installation Requirements
 
-### You have two option to view this project:
-
-## First Option
-
-- Clone this project from provided GitHub repository: [Repository Link](https://github.com/onurkaymak/pizza-parlor)
+- Clone this project from provided GitHub repository: [Repository Link](https://github.com/onurkaymak/galactic-age-calculator)
 - Navigate into the project's folder in your terminal.
-- Please note that you need have Node.js and NPM are installed in your local machine to install all the dependencies.
+- Please note that you need both Node.js and NPM are installed in your local machine to install all the dependencies to run this app.
 - Type `npm install` in your terminal to download all the necessary dependencies.
 - Once NPM install all the dependencies, you can type `npm run start` in your terminal to view the project on your browser.
-
-## Second Option
-
-You can also view this project live from the provided link: [Live App Link](https://github.com/onurkaymak)
 
 ## Known Bugs
 
