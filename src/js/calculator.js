@@ -58,5 +58,9 @@ export class Calculator {
             }
         };
     }
+
+    futureBirthday(yearInFuture) {
+
+    }
 }
 
