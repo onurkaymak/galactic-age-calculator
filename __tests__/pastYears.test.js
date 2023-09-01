@@ -23,4 +23,12 @@ describe('pastYears', () => {
             calculator.pastYears(43);
             expect(calculator.venus).toEqual({ yearPassedSince: { message: "It has been 20.96 years passed, since your birthday of 69 in planet Venus!" } });
         });
+
+
+    test('Test #4 - Should return how many years have passed on planet Mars since a past birthday.',
+        () => {
+            const calculator = new Calculator(56);
+            calculator.pastYears(43);
+            expect(calculator.mars).toEqual({ yearPassedSince: { message: "It has been 6.91 years passed, since your birthday of 22 in planet Mars!" } });
+        });
 });
