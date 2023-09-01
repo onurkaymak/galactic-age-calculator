@@ -1,13 +1,13 @@
 export class Calculator {
     constructor(age) {
-        this.earth = {
-            earthAge: age
-        };
         this.solarYearDifferences = {
             mercury: .24,
             venus: .62,
             mars: 1.88,
             jupiter: 11.86
+        };
+        this.earth = {
+            earthAge: age
         };
     }
 
