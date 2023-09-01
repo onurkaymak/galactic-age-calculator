@@ -1,11 +1,15 @@
 export class Calculator {
     constructor(age) {
-        this.age = age;
+        this.earth = {
+            earthAge: age
+        };
     }
 
     calcForPlanet() {
         const mercuryYearInEarth = .24;
-        let planetYear = this.age / mercuryYearInEarth;
-        return Math.round(planetYear);
+
+        let inMercuryYear = Math.round((this.earth.earthAge / mercuryYearInEarth));
+        this.mercury = { mercuryAge: inMercuryYear };
     }
 }
+
