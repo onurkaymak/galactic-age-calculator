@@ -24,7 +24,11 @@ export class Calculator {
     }
 
     pastYears(pastYear) {
+        let pastYearInEarth = this.earth.earthAge - pastYear;
 
+        this.earth.yearPassedSince = {
+            message: `It has been ${pastYearInEarth} years passed, since your birthday of ${pastYear} in planet Earth!`
+        };
     }
 }
 
