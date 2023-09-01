@@ -32,4 +32,11 @@ describe('calcForPlanet', () => {
             calculator.calcForPlanet();
             expect(calculator.mars).toEqual({ ageInMars: 17 });
         });
+
+    test('Test #4 - Should return a calculated age in a created jupiter object based on planet Jupiter solar year.',
+        () => {
+            const calculator = new Calculator(32);
+            calculator.calcForPlanet();
+            expect(calculator.jupiter).toEqual({ ageInJupiter: 3 });
+        });
 });
