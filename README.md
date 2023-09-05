@@ -1,10 +1,8 @@
 # Super Galactic Age Calculator
 
-#### An age calculator based on different planets in the solar system.
+#### An age calculator based on different planet's solar year in the solar system.
 
-#### By _**Onur Kaymak**_
-
-[Onur Kaymak Portfolio](https://onurkaymak.com)
+#### By [Onur Kaymak](https://onurkaymak.com)
 
 ## Technologies Used
 
