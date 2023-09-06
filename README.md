@@ -13,6 +13,7 @@
 - Git
 - NPM
 - JEST
+- Webpack
 - ESLint
 - VS Code
 
@@ -26,8 +27,14 @@ An independent project assignment for Epicodus, project is about Test-Driven Dev
 - Clone this project from provided GitHub repository: [Repository Link](https://github.com/onurkaymak/galactic-age-calculator)
 - Navigate into the project's folder in your terminal.
 - Please note that you need both Node.js and NPM are installed in your local machine to install all the dependencies to run this app.
-- Type `npm install` in your terminal to download all the necessary dependencies.
-- Once NPM install all the dependencies, you can type `npm run start` in your terminal to view the project on your browser.
+- While you are in the root level of the project folder, type `$ npm install` in your terminal to download all the necessary dependencies.
+- Once NPM install all the dependencies, you can type `$ npm run build` in your terminal, this will let [Webpack](https://webpack.js.org/concepts/) to bundle application files.
+- Finally, you can type `$ npm run start`, this will let Webpack to start the application in your browser.
+- You can always check package.json file to see full list of dependencies and scripts.
+
+#### Run Test files with Jest
+
+- You can type `$ npm run test` to run all tests included in this project with [Jest](https://jestjs.io/).
 
 ## Known Bugs
 
